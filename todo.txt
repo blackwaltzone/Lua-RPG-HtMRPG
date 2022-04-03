@@ -1,0 +1,27 @@
+- debug mode with:
+	- collision boxes
+	- action circle
+
+- puzzles
+	- push blocks
+	- key/door
+	- kill all enemies
+	- collect something
+	- light lamps
+	- shoot something
+	- light reflection lines
+	- put object in a holder
+	- turn everything a certain direction
+	- put something on a switch
+	- turn everything a certain color
+	- mini boss
+	- boss
+	- warping/teleporting?
+	- mazes that warp you back to the same location
+
+- special tiles
+	- water tiles that can only pass with flippers
+	- air tiles?
+	- trigger tiles
+	- teleport tiles
+	- levers
