@@ -59,41 +59,8 @@ gMap:GotoTile(7,7)
 
 gHero = Character:Create(gCharacters.hero, gMap)
 
---gUpDoorTeleport = Actions.Teleport(gMap, 4, 1)
---gDownDoorTeleport = Actions.Teleport(gMap, 8, 5)
-
-
 gHero.mEntity:SetTilePos(4,1,1,gMap)
 
---[[
-gTriggerTop = Trigger:Create
-{
-	OnEnter = gDownDoorTeleport,
-}
-gTriggerBottom = Trigger:Create
-{
-	OnEnter = gUpDoorTeleport,
-}
-gTriggerStart = Trigger:Create
-{
-	OnExit = function() gMessage = "OnExit: Left the start position" end
-}
-gTriggerTile = Trigger:Create
-{
-	OnUse = function() gMessage = "OnUse: Trigger Tile!" end
-}
-
-gMap.mTriggers =
-{
-	-- Layer 1
-	{
-		[gMap:CoordToIndex(8, 5)] = gTriggerBottom,
-		[gMap:CoordToIndex(4, 0)] = gTriggerTop,
-		[gMap:CoordToIndex(4, 1)] = gTriggerStart,
-		[gMap:CoordToIndex(6, 8)] = gTriggerTile,
-	}
-}
-]]--
 function GetFacedTileCoords(character)
 	 -- Change the facing information into a tile offset
 	 local xInc = 0
